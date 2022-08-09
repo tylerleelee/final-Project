@@ -245,6 +245,7 @@ body {
   --tw-text-opacity: 1;
   color: rgba(124,139,161, 1 );
   line-height: 2;
+  font-size: 18px;
 }
 
 .project_h2 {
