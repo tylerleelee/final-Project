@@ -6,8 +6,8 @@
   font-family: Inter, system-ui;
 }
 
-header {
-  padding-top: 32px;
+body {
+  padding: 32px;
 }
 
 .nav_logo {
@@ -37,7 +37,7 @@ header {
 .btn {
   background-color: #6415ff;
   color: white;
-  padding: 6px 16px;
+  padding: 12px 18px;
   font: 14px;
   text-decoration: none;
   font-weight: 900;
@@ -155,6 +155,7 @@ header {
 
 .features_h2 {
   font-size: 48px;
+  white-space: nowrap;
 }
 
 .features_header {
@@ -162,7 +163,7 @@ header {
   color: #6415ff;
 }
 
-.features_p {
+.features_header-p {
   color: #7c8ba1;
   font-size: 18px;
   margin-top: 1rem;
@@ -174,16 +175,25 @@ header {
   display: flex;
   flex-direction: row;
   padding: 1.25rem;
+  border-width: 1px;
+  text-align: center;
+  border-radius: 9999px;
+  padding: 1.25rem;
 }
 
 #features {
-  padding: 0 96px;
+  padding: 96px 0;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .features_links {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .features_link {
@@ -191,9 +201,89 @@ header {
   display: flex;
   margin: left 1rem;
   margin-top: .5rem;
+  align-items: flex-start;
+  padding: 32px 8px;
 }
 
 .features_title {
+  font-size: 1.5rem;
+  letter-spacing: .025rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #243e63;
+}
+
+.features_p {
+  margin-top: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(124,139,161, 1 );
+  line-height: 2;
   
 }
 
+.features_text {
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+
+.project_btn {
+  background-color: #6415ff;
+  color: white;
+  padding: 12px 18px;
+  font: 14px;
+  text-decoration: none;
+  font-weight: 900;
+  border: none;
+  border-radius: 9999px;
+  margin-top: 2rem;
+}
+
+.project_p {
+  margin-top: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgba(124,139,161, 1 );
+  line-height: 2;
+}
+
+.project_h2 {
+  font-size: 3rem;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #243e63;
+}
+
+.project_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.project_left {
+  width: 50%;
+}
+
+.project_header {
+  letter-spacing: 0.1em;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(100,21,255,var(--tw-text-opacity));
+}
+
+#project {
+  max-width: 1280px;
+  padding: 96px 0;
+  margin: 0 auto;
+}
+
+.project_img {
+  width: 100%;
+  border: 1px solid #e5e7eb;;
+} 
+
+.project_right {
+  width: 50%;
+}
